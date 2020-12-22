@@ -13,7 +13,7 @@ clf=pickle.load(pickle_in)
 def welcome():
     return "Welcome All"
 
-def Titanic_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode):
+def job_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode):
     prediction=clf.predict(['Gender', 'Course', 'School_Type', 'Qualification', 'Job_Search_Mode'])
     print(prediction)
     return 'The prediction value is '+str(prediction)
@@ -33,7 +33,7 @@ def main():
     Job_Search_Mode=st.text_input("Job_Search_Mode", "Type here")
     result=""
     if st.button("Predict"):
-        result=Titanic_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode)
+        result=job_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode)
     st.success('The first job prediction via NYSC is {}'.format(result))
     if st.button("Prediction Note"):
         st.text("0-No, No job via NYSC, 1=Yes, job via NYSC")
