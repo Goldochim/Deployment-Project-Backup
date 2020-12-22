@@ -16,7 +16,7 @@ def welcome():
 def job_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode):
     prediction=clf.predict([['Gender', 'Course', 'School_Type', 'Qualification', 'Job_Search_Mode']])
     print(prediction)
-    return prediction
+    return 'The prediction for job via NYSC is '+ prediction
 
 def main():
     st.title("First Job Predictor")
