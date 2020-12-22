@@ -6,8 +6,9 @@ Created on Mon Dec 21 19:36:49 2020
 
 import streamlit as st
 import pickle
+import sklearn
 
-clf = pickle.load(open("classifier.pkl", 'rb'))
+clf=pickle.load(open("classifier.pkl", 'rb'))
 
 def welcome():
     return "Welcome All"
