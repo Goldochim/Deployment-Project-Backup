@@ -1,5 +1,5 @@
 alabaster==0.7.12
-altair==4.1.0
+
 
 
 conda==4.9.2
