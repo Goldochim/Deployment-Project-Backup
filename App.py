@@ -8,7 +8,7 @@ import streamlit as st
 import pickle
 import sklearn
 
-clf=pickle.load(open("classifier.pkl", 'rb'))
+clf=pickle.load(open("clf_job.pkl", 'rb'))
 
 def welcome():
     return "Welcome All"
