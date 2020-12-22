@@ -55,7 +55,6 @@ tables==3.6.1
 
 toml==0.10.1
 
-tqdm @ file:///tmp/build/80754af9/tqdm_1607369919789/work
 
 
 
