@@ -14,7 +14,7 @@ def welcome():
     return "Welcome All"
 
 def job_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode):
-    prediction=clf.predict(['Gender', 'Course', 'School_Type', 'Qualification', 'Job_Search_Mode'])
+    prediction=clf.predict([['Gender', 'Course', 'School_Type', 'Qualification', 'Job_Search_Mode']])
     print(prediction)
     return 'The prediction value is'+ prediction
 
