@@ -25,11 +25,11 @@ def main():
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
-    Gender=st.text_input("Gender", "Type here")
-    Course=st.text_input("Course", "Type here")
-    School_Type=st.text_input("School_Type", "Type here")
-    Qualification=st.text_input("Qualification", "Type here")
-    Job_Search_Mode=st.text_input("Job_Search_Mode", "Type here")
+    Gender=st.text_input("Gender", "T0=Male, 1=Female")
+    Course=st.text_input("Course", "Type a number between 1-121, check list for school names")
+    School_Type=st.text_input("School_Type", "0=state, 1=Federal , 2=Indigenous , 3=Foreign , 4=Private")
+    Qualification=st.text_input("Qualification", "0=Masters, 1=HND, 2=PhD, 3=OND, 4=Bachelors")
+    Job_Search_Mode=st.text_input("Job_Search_Mode", "0: University/polytechnic, 1=Personal contacts, 2=Employer's website, 3=Media, 4=Recruitment agency-online or offline,5=Social Media, 6=Internship")
     result=""
     if st.button("Predict"):
         result=job_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode)
