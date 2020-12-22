@@ -20,7 +20,7 @@ def job_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode):
 def main():
     st.title("First Job Predictor")
     html_temp="""
-    <div style="background-color:coral1;padding:10px">
+    <div style="background-color:tomato;padding:8px">
     <h2 style="color:white;text-align:center;"> Job via NYSC predictor</h2>
     </div>
     """
