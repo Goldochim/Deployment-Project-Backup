@@ -37,6 +37,7 @@ def main():
     st.success('The first job prediction via NYSC is {}'.format(result))
     if st.button("Prediction Note"):
         st.text("0-No, No job via NYSC, 1=Yes, job via NYSC")
-        
+    if st.button("School List"):
+        st.text("0=University of Lagos, 1=University of Jos, 2=University of Ibadan")
 if __name__=='__main__':
     main()
