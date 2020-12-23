@@ -8,15 +8,15 @@ import streamlit as st
 import pickle
 import sklearn
 
-clf=pickle.load(open("clf_D.pkl", 'rb'))
+clf=pickle.load(open("classifier.pkl", 'rb'))
 
 def welcome():
     return "Welcome All"
 
 def job_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode):
-    prediction=clf.predict(['Gender', 'Course', 'School_Type', 'Qualification', 'Job_Search_Mode'])
+    prediction=clf.predict([['Gender', 'Course', 'School_Type', 'Qualification', 'Job_Search_Mode']])
     print(prediction)
-    return 'The prediction value is'+ prediction
+    return 'The prediction for job via NYSC is '+ prediction
 
 def main():
     st.title("First Job Predictor")
