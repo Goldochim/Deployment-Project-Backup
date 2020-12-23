@@ -26,11 +26,11 @@ def main():
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
-    Gender=st.text_input("GENDER (0=Male, 1=Female)", " ")
-    Course=st.text_input("COURSE (Type a number between 1-121, check list for school names)", " ")
-    School_Type=st.text_input("SCHOOL_TYPE (0=state, 1=Federal , 2=Indigenous , 3=Foreign , 4=Private)", " ")
-    Qualification=st.text_input("QUALIFICATION (0=Masters, 1=HND, 2=PhD, 3=OND, 4=Bachelors)", " ")
-    Job_Search_Mode=st.text_input("JOB_SEARCH MODE (0=UnI/poly, 1=Personal contacts, 2=Employer's website, 3=Media, 4=Recruitment agency-online or offline,5=Social Media, 6=Internship)", " ")
+    Gender=st.text_input("GENDER (0=Male, 1=Female)", "Enter the code ")
+    Course=st.text_input("COURSE (Type a number between 1-121, check list for school names)", "Enter the code ")
+    School_Type=st.text_input("SCHOOL_TYPE (0=state, 1=Federal , 2=Indigenous , 3=Foreign , 4=Private)", "Enter the code ")
+    Qualification=st.text_input("QUALIFICATION (0=Masters, 1=HND, 2=PhD, 3=OND, 4=Bachelors)", "Enter the code ")
+    Job_Search_Mode=st.text_input("JOB_SEARCH MODE (0=UnI/poly, 1=Personal contacts, 2=Employer's website, 3=Media, 4=Recruitment agency-online or offline,5=Social Media, 6=Internship)", "Enter the code ")
     result=""
     if st.button("Predict"):
         result=job_Prediction(Gender, Course, School_Type,Qualification, Job_Search_Mode)
